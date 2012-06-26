@@ -1,0 +1,53 @@
+imap ii <Esc>
+map	f :
+if has("gui_running")
+    colorscheme	candy
+else
+    colorscheme desert
+endif
+autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
+au BufNewFile,BufRead *.install set filetype=php
+au BufNewFile,BufRead *.module set filetype=php
+au BufNewFile,BufRead *.inc set filetype=php
+
+"call onmifunc
+inoremap <expr><TAB>  pumvisible() ? "\<C-x>\<C-O>" : "\<TAB>"
+let g:ctrlp_root_markers = ['trunk']
+set noexpandtab
+set nolist
+"I hate the f1 key
+map <F1> <Esc>
+imap <F1> <Esc>
+
+"Morgan Terry's vimrc"
+" Don't show list characters (tab, EOL, etc)
+" set nolist
+"
+" " Format XML files
+" "au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
+"
+" " Undo stupid stuff from spf13
+" cunmap W
+" cunmap WQ
+" cunmap wQ
+" cunmap Q
+" cunmap Tabe
+"
+" " My own miscellaneous customizations
+" set splitright
+" set splitbelow
+" set noexpandtab
+"
+" " Terminal mode color
+" if has("gui_running")
+"     "colorscheme solarized
+"         colorscheme wombat
+"         else
+"             colorscheme default
+"             endif
+"
+"             set background=dark
+"
+"             let NERDTreeWinSize=50
+"
+"             Bundle 'vcscommand'"
