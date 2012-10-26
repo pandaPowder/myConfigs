@@ -9,6 +9,7 @@ autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
 au BufNewFile,BufRead *.install set filetype=php
 au BufNewFile,BufRead *.module set filetype=php
 au BufNewFile,BufRead *.inc set filetype=php
+au BufNewFile,BufRead *.test set filetype=php
 
 "call onmifunc
 inoremap <expr><TAB>  pumvisible() ? "\<C-x>\<C-O>" : "\<TAB>"
