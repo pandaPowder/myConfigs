@@ -1,0 +1,5 @@
+"tell spf13 to leave my working directory alone!
+let g:spf13_no_autochdir = 1
+"tell spf13 to stop doing stupid stuff with rewriting my commandline
+let g:spf13_no_keyfixes = 1
+Bundle 'vim-scripts/vcscommand.vim'

@@ -10,12 +10,18 @@ au BufNewFile,BufRead *.install set filetype=php
 au BufNewFile,BufRead *.module set filetype=php
 au BufNewFile,BufRead *.inc set filetype=php
 au BufNewFile,BufRead *.test set filetype=php
+"I don't want whitespace highlighted
+set nolist
+"not a fan of this plugin
+let g:indent_guides_enable_on_vim_startup=0 
 
 "call onmifunc
 inoremap <expr><TAB>  pumvisible() ? "\<C-x>\<C-O>" : "\<TAB>"
 let g:ctrlp_root_markers = ['trunk']
 set noexpandtab
 set nolist
+"undo spf13 clipboard integration. I prefer to have them separate 
+set clipboard=
 "I hate the f1 key
 map <F1> <Esc>
 imap <F1> <Esc>
