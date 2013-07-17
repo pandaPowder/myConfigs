@@ -1,0 +1,23 @@
+[color]
+	status = auto
+	branch = auto
+	ui = auto
+[user]
+	name = Dallas Despain
+	email = dallas.despain@gmail.com
+[credential]
+	helper = osxkeychain
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+[core]
+	editor = mvim -f
+	autocrlf = input
+	safecrlf = true
+[push]
+	default = simple
