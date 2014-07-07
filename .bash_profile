@@ -38,4 +38,5 @@ source ~/.git-prompt.sh
 if [ -f ~/.git-completion.bash ]; then
   source ~/.git-completion.bash
 fi
+export PROMPT_COMMAND='echo -n "]1;$PWD"'
 PS1="\[$GREEN\]\t\[$RED\]-\[$BLUE\]\u\[$YELLOW\]\[$YELLOW\]\w\[\033[m\]\[$MAGENTA\]\$(__git_ps1)\[$WHITE\]\$ "

@@ -26,6 +26,14 @@ set clipboard=
 map <F1> <Esc>
 imap <F1> <Esc>
 
+"create new directories for this file
+function WriteCreatingDirs()
+    execute ':silent !mkdir -p %:h'
+    write
+endfunction
+command W call WriteCreatingDirs()
+Bundle 'bling/vim-airline'
+
 "Morgan Terry's vimrc"
 " Don't show list characters (tab, EOL, etc)
 " set nolist
