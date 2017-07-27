@@ -40,3 +40,12 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 export PROMPT_COMMAND='echo -n "]1;$PWD"'
 PS1="\[$GREEN\]\t\[$RED\]-\[$BLUE\]\u\[$YELLOW\]\[$YELLOW\]\w\[\033[m\]\[$MAGENTA\]\$(__git_ps1)\[$WHITE\]\$ "
+
+
+
+
+export PATH="$PATH:/Applications/DevDesktop/drush"
+export XDEBUG_CONFIG="idekey=PHPSTORM"
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+

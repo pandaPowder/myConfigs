@@ -18,7 +18,9 @@ let g:indent_guides_enable_on_vim_startup=0
 "call onmifunc
 inoremap <expr><TAB>  pumvisible() ? "\<C-x>\<C-O>" : "\<TAB>"
 let g:ctrlp_root_markers = ['trunk']
-set noexpandtab
+set expandtab
+set shiftwidth=2
+set softtabstop=2
 set nolist
 "undo spf13 clipboard integration. I prefer to have them separate 
 set clipboard=

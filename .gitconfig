@@ -3,7 +3,7 @@
 	branch = auto
 	ui = auto
 [user]
-	name = Dallas Despain
+	name = pandaPowder
 	email = dallas.despain@gmail.com
 [credential]
 	helper = osxkeychain
